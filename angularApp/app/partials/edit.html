@@ -1,0 +1,37 @@
+<header class="page-header">
+    <h1>Modification</small>
+    </h1>
+</header>
+
+<section>
+    <form class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label">Titre :</label>
+            <input type="text" ng-model="obj.Title">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Modele :</label>
+            <input type="text" ng-model="obj.Model">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Type : </label>
+            <input type="text" ng-model="obj.Type">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Description :</label>
+            <textarea ng-model="obj.Desc"></textarea>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Capacite :</label>
+            <input type="number" ng-model="obj.Cap">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Prix :</label>
+            <input type="number" ng-model="obj.Price">
+        </div>
+        <footer class="form-actions">
+            <a href="#/objects" class="btn btn-danger btn-small">Annuler</a>
+            <button class="btn btn-success" ng-click="updateObject(obj)">Modifier</button>
+        </footer>
+    </form>
+</section>

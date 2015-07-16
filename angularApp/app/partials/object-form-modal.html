@@ -1,0 +1,42 @@
+<header class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">x</button>
+    <h3>Ajouter une annonce</h3>
+</header>
+<section class="modal-body">
+    <form name="objectForm" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label">Titre :</label>
+            <input type="text" value="" ng-model="obj.Title">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Modele :</label>
+            <input type="text" value="" ng-model="obj.Model">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Type : </label>
+            <input type="text" value="" ng-model="obj.Type">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Description :</label>
+            <input type="text" value="" ng-model="obj.Desc">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Capacite :</label>
+            <input type="number" value="" ng-model="obj.Cap">
+        </div>
+        <div class="control-group">
+            <label class="control-label">Prix :</label>
+            <input type="number" value="" ng-model="obj.Price">
+        </div>
+         <div class="control-group">
+            <label class="control-label">Proprietaire :</label>
+            <input type="text" value="" ng-model="obj.Own">
+        </div>
+    </form>
+</section>
+<footer class="modal-footer">
+    <button class="btn btn-danger btn-small" ng-click="dismiss();">Annuler</button>
+    <button class="btn btn-success" ng-click="addObject(obj);dismiss();">Ajouter</button>
+</footer>
+
+<!-- ng-disabled="movieForm.$invalid" -->
